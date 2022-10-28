@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" thread-count="5" name="Suite">
+	<parameter name="browser" value="chrome" />
+	<test name="chrome">
+
+		<!-- <groups>
+			<run>
+
+				<include name="regression" />
+				<exclude name="smoke" />
+			</run>
+		</groups> -->
+		<classes>
+			<class name="com.bhaskar.selenium.testng.VerifeyeTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+
+	<!-- <test name="edge">
+		<classes>
+			<class name="com.bhaskar.selenium.testng.VerifeyeTest" />
+		</classes>
+	</test> Test
+	<test name="sanity">
+		<classes>
+			<class name="com.bhaskar.selenium.testng.VerifeyeTest" />
+		</classes>
+	</test>  -->
+
+
+</suite> <!-- Suite -->
